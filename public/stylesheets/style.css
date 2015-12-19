@@ -2,3 +2,86 @@
 .bodycenter {
     margin-top: 100px;
 }
+
+
+#wcf-playerlist {
+    padding-top: 50px;
+}
+#wcf-playerlist .wcfplayer {
+    marign: 0;
+    padding: 0;
+    font-family: 'Robot', sans-serif;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-table {
+    padding-bottom: 30px;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-table .wcfplayer-header {
+    position: relative;
+    background: #dd4814;
+    padding: 22px 22px;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-table .wcfplayer-header .wcfplayer-avatar {
+    display: inline;
+    vertical-align: middle;
+    border-radius: 100%;
+    background: #e5e5e5;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-table .wcfplayer-header .u-sm-size36x36 {
+    width: 48px !important;
+    height: 48px !important;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-table .wcfplayer-header .wcfplayer-title {
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-table .wcfplayer-header .wcfplayer-rate {
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-table .wcfplayer-header .wcfplayer-rate sup {
+    font-size: 24px;
+    position: relative;
+    top: -30px;
+    color: #bdc3c7;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-table .wcfplayer-header .wcfplayer-rate span {
+    font-size: 16px;
+    color: #bdc3c7;
+    text-transform: uppercase;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-info {
+    padding: 20px 0 40px 0;
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-info ul {
+    padding: 0px;
+    display: table;
+    margin: 0px auto;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-info ul li {
+    list-style: none;
+    border-bottom: 1px solid #EAECEB;
+    color: #bdc3c7;
+    font-size: 16px;
+    line-height: 42px;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-info ul li:last-child {
+    border: none;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-info ul li i {
+    margin-right: 12px;
+    color: #bdc3c7;
+}
+#wcf-playerlist .wcfplayer .wcfplayer-info ul li span {
+    color: #dd4814;
+}
