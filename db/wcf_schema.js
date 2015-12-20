@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var db = mongoose.createConnection('mongodb://localhost/wcfdb');
+var db = mongoose.createConnection('mongodb://192.168.1.101/wcfdb');
 
 db.on('error', function(error) {
     console.log(error);
