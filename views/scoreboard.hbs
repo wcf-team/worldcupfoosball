@@ -1,0 +1,58 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">{{title}}</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="/scoreboard">Scoreboard</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/register"><span class="fa fa fa-futbol-o"> Join</span></a></li>
+                <li><a href="/login"><span class="fa fa-sign-in"> Login</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<section class="scoreboard" id="wcf-playerlist">
+
+    <div class="container">
+        <div class="row">
+            <div class="wcfplayer">
+                {{#each players}}
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="wcfplayer-table">
+                            <div class="wcfplayer-header">
+                                <img class="wcfplayer-avatar u-sm-size36x36" src="images/missing_face.png"/>
+                                <p class="wcfplayer-title">Zelin</p>
+                                <p class="wcfplayer-rate">NO. 1</p>
+                            </div>
+                            <div class="wcfplayer-info">
+                                <ul>
+                                    <li><i class="fa fa-star"></i><span>1,000</span> scores</li>
+                                    <li><i class="fa fa-archive"></i>Play <span>10</span> Rounds</li>
+                                    <li><i class="fa fa-trophy"></i>Win <span>10</span> Rounds</li>
+                                    <li><i class="fa fa-times"></i>Loss <span>0</span> Rounds</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title{{title}}</title>
+</head>
+<body>
+
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -7,12 +16,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">{{site_title}}</a>
+            <a class="navbar-brand" href="/">{{title}}</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/scoreboard">Scoreboard</a></li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/register"><span class="fa fa fa-futbol-o"> Register</span></a></li>
+                <li><a href="/register"><span class="fa fa fa-futbol-o"> Join</span></a></li>
                 <li><a href="/login"><span class="fa fa-sign-in"> Login</span></a></li>
             </ul>
         </div>
@@ -20,51 +33,28 @@
 </nav>
 
 
-<form class="col-sm-offset-4 col-sm-4 bodycenter">
+<form class="col-sm-offset-4 col-sm-4 bodycenter" action="home" method="post">
     <fieldset>
         <legend>Login</legend>
         <div class="form-group">
             <label for="playername" class="control-label">Player Name</label>
-            <input type="text" class="form-control" id="playername" placeholder="Player name">
+            <input type="text" class="form-control" id="playername" placeholder="Player name" required>
         </div>
         <div class="form-group">
             <label for="password" class="control-label">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password">
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
         </div>
         </div>
 
         <div class="form-group">
-            <button type="submit" id="register0" class="btn btn-primary">Register</button>
-            <button type="button" id="login0" class="btn btn-primary">Login</button>
+            <button type="submit" id="login0" class="btn btn-primary">Login</button>
         </div>
     </fieldset>
 </form>
 
+</body>
+</html>
 
-<script type="text/javascript">
-    $(function(){
-        $("#register0").click(function(){
-            location.href = 'register';
-        });
-        $("#login0").click(function(){
-            var playername = $("#playername").val();
-            var password = $("#password").val();
-            var data = {"playername":playername,"password":password};
-            $.ajax({
-                url:'/login',
-                type:'post',
-                data: data,
-                success: function(data,status){
-                    if(status == 'success'){
-                        location.href = '/';
-                    }
-                },
-                error: function(data,status){
-                    if(status == 'error'){
-                        location.href = 'login';
-                    }
-                }
-            });
-        });
-    });
-</script>
+
+
+

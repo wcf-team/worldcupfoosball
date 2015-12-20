@@ -6,17 +6,36 @@ var playerlist = wcfschema.playerlist;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { site_title: 'World Cup Foosball' });
+  res.render('index', { title: 'World Cup Foosball' });
 });
 
-
-
-router.get('/login', function(req, res, next) {
-  res.render('login', { site_title: 'World Cup Foosball' });
+router.get('/scoreboard', function(req, res, next) {
+  res.render('scoreboard', { title: 'World Cup Foosball', players: playerlist });
 });
 
 router.get('/register', function(req, res, next) {
-  res.render('register', { site_title: 'World Cup Foosball' });
+  res.render('register', { title: 'World Cup Foosball' });
+});
+
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'World Cup Foosball' });
+});
+
+router.post('/home', function(req, res) {
+  var query = {play_name: req.body.playername, password: req.body.password};
+  console.log(req.body.playername);
+
+  (function(){
+    playerlist.count(query, function(err, doc){
+      if(doc == 1){
+        console.log(query.play_name + "login success " + new Date());
+        res.render('home', { title: 'World Cup Foosball' });
+      }else{
+        console.log(query.play_name + "login fail " + new Date());
+        res.redirect('/login');
+      }
+    });
+  })(query);
 });
 
 

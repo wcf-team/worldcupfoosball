@@ -3,12 +3,73 @@
     margin-top: 100px;
 }
 
+iframe {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+#wcf-broadcast {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+#wcf-broadcast .broadcast-table {
+    display: inline;
+}
+
+#wcf-broadcast .broadcast-table .broadcast-header {
+    //background: #aaaaaa;
+    position: relative;
+    text-align: center;
+    border: 1px solid #dd4814;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.broadcast-title-vs {
+    color: #dd4814;
+    letter-spacing: 2px;
+    font-size: 72px;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+
+#wcf-broadcast .broadcast-table .broadcast-header .broadcast-title-red {
+    color: red;
+    letter-spacing: 2px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+}
+#wcf-broadcast .broadcast-table .broadcast-header .broadcast-title-blue {
+    color: blue;
+    letter-spacing: 2px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#wcf-broadcast .broadcast-table .broadcast-header .broadcast-score {
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
 
 #wcf-playerlist {
     padding-top: 50px;
 }
 #wcf-playerlist .wcfplayer {
-    marign: 0;
+    margin-top: 50px;
     padding: 0;
     font-family: 'Robot', sans-serif;
 }

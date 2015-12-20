@@ -7,47 +7,56 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">{{site_title}}</a>
+            <a class="navbar-brand" href="/">{{title}}</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/scoreboard">Scoreboard</a></li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/register"><span class="fa fa fa-futbol-o"> Register</span></a></li>
+                <li><a href="/register"><span class="fa fa fa-futbol-o"> Join</span></a></li>
                 <li><a href="/login"><span class="fa fa-sign-in"> Login</span></a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-
-<section class="wcf-playerlist" id="wcf-playerlist">
-
+<section class="wcf-broadcast" id="wcf-broadcast">
     <div class="container">
         <div class="row">
-            <div class="wcfplayer">
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="wcfplayer-table">
-                        <div class="wcfplayer-header">
-                            <img class="wcfplayer-avatar u-sm-size36x36" src="images/missing_face.png"/>
-                            <p class="wcfplayer-title">Zelin</p>
-                            <p class="wcfplayer-rate">NO. 1</p>
-                        </div>
-
-                        <div class="wcfplayer-info">
-                            <ul>
-                                <li><i class="fa fa-star"></i><span>1,000</span> scores</li>
-                                <li><i class="fa fa-archive"></i>Play <span>10</span> Rounds</li>
-                                <li><i class="fa fa-trophy"></i>Win <span>10</span> Rounds</li>
-                                <li><i class="fa fa-times"></i>Loss <span>0</span> Rounds</li>
-                            </ul>
-                        </div>
+            <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-12">
+                <div class="broadcast-table">
+                    <div class="broadcast-header">
+                        <p class="broadcast-title-red">RED</p>
+                        <p class="broadcast-score">0</p>
                     </div>
                 </div>
-
-
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12">
+                <p class="broadcast-title-vs">VS</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="broadcast-table">
+                    <div class="broadcast-header">
+                        <p class="broadcast-title-blue">BLUE</p>
+                        <p class="broadcast-score">0</p>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-sm-12 col-xs-12">
+                <div class="broadcast-video">
+                    <iframe src="" width="100%" height="500px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
+
 </section>
+
+
+

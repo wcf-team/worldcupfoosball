@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">{{title}}</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/scoreboard">Scoreboard</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/logout"><span class="fa fa-sign-out"> Logout</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="wcf-broadcast" id="wcf-broadcast">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-12">
+                <div class="broadcast-table">
+                    <div class="broadcast-header">
+                        <p class="broadcast-title-red">RED</p>
+                        <p class="broadcast-score">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12">
+                <p class="broadcast-title-vs">VS</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="broadcast-table">
+                    <div class="broadcast-header">
+                        <p class="broadcast-title-blue">BLUE</p>
+                        <p class="broadcast-score">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-sm-12 col-xs-12">
+                <div class="broadcast-video">
+                    <iframe src="" width="100%" height="500px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
